@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lobi Kelompok</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-1: #0d1b2a;    /* navy */
+      --bg-2: #1b263b;    /* deep blue */
+      --accent-1: #4cc9f0; /* cyan */
+      --accent-2: #4361ee; /* blue */
+      --muted: rgba(255,255,255,0.75);
+      --card: rgba(255,255,255,0.04);
+    }*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  color: #fff;
+  background: linear-gradient(160deg,var(--bg-1) 0%, var(--bg-2) 100%);
+  -webkit-font-smoothing:antialiased;
+  display:flex;align-items:center;justify-content:center;padding:28px;
+}
+
+.container{
+  width:min(960px,96%);
+  text-align:center;
+}
+
+.group-photo{
+  width:80%;max-width:480px;margin:0 auto 20px;border-radius:14px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,0.6);
+}
+.group-photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+h1{font-size:22px;margin-bottom:8px;font-weight:700}
+p.lead{color:var(--muted);font-size:14px;margin-bottom:28px}
+
+.buttons{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  max-width:640px;
+  margin:0 auto;
+}
+
+.btn{
+  display:flex;align-items:center;justify-content:center;
+  padding:16px;border-radius:12px;
+  font-weight:700;font-size:15px;
+  text-decoration:none;
+  transition: transform .25s ease, box-shadow .25s ease, background .4s ease;
+  color:#fff;
+  background:linear-gradient(135deg,var(--accent-1),var(--accent-2));
+  box-shadow:0 6px 20px rgba(0,0,0,0.4);
+}
+.btn:hover{
+  transform:translateY(-6px) scale(1.03);
+  box-shadow:0 14px 32px rgba(0,0,0,0.65);
+  background:linear-gradient(135deg,var(--accent-2),var(--accent-1));
+}
+
+  </style>
+</head>
+<body>
+  <main class="container" role="main"><div class="group-photo">
+</div>
+
+<h1>Selamat Datang di Lobi Kelompok</h1>
+<p class="lead">Klik salah satu tombol di bawah untuk membuka profil GitHub anggota.</p>
+
+<div class="buttons">
+  <a class="btn" href="https://adriannazhory1-dot.github.io/ianhtml/" target="_blank">Adrian Nazhory Ramandhan</a>
+  <a class="btn" href="https://ultramannailah.github.io/kuga/" target="_blank">Putri Nailah</a>
+  <a class="btn" href="https://yusuf-rafif.github.io/htmlyusuf/" target="_blank">Yusuf Rafif Arkan</a>
+  <a class="btn" href="https://shrlyvs.github.io/Sharliz-Falisha/" target="_blank">Sharliz Falisha</a>
+</div>
+
+  </main>
+</body>
+</html>
